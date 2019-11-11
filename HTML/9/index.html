@@ -1,0 +1,15 @@
+<html>
+  <head></head>
+  <body>
+    <input id="myId" />
+    <button id="myButton">click</button>
+    <script>
+      const myButton = document.getElementById("myButton");
+      const myIdFromDOM = document.getElementById("myId");
+
+      myButton.addEventListener("click", e => {
+        alert(myIdFromDOM.value);
+      });
+    </script>
+  </body>
+</html>
